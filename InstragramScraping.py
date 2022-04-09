@@ -2,10 +2,6 @@ from InstagramScrapingClass import InstagramScrapingClass
 import numpy as np
 
 base_url = "https://www.instagram.com"
-profile = "/narcisrossello/"
-# profile = "/nrcs_97/"
-email = "narcisrossello@gmail.com"
-# email = "narcisrossello97@gmail.com"
 
 def nonMutualFollowers(followers, following):
     nonMutual = np.setdiff1d(following, followers)
@@ -15,6 +11,10 @@ if __name__ == "__main__":
     print("START EXECUTION")
     followers = []
     following = []
+    print("Enter your email: ")
+    email = input()
+    print("Enter your profile: ")
+    profile = input()
     scraper = InstagramScrapingClass(base_url, profile, email)
     scraper.login()
     while(1):
