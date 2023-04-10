@@ -14,8 +14,8 @@ def main_function():
     print("START EXECUTION")
     followers = []
     following = []
-    n_followers = 384
-    n_followed = 414
+    n_followers = 10
+    n_followed = 10
     print("Enter your email: ")
     email = input()
     print("Enter your profile: ")
